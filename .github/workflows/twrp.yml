@@ -5,22 +5,22 @@ on:
 
 env:
   # (required) twrp manifest 
-  MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
+  MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
   # (required) manifest branch 
-  BRANCH: twrp-11
+  BRANCH: twrp-7.1.2
   # (required) device codename i.e: sweet mojito.. 
-  DEVICE: m10lte
+  DEVICE: P85Nxt
   # (required) device tree link with branch if exists
-  DT_LINK: https://github.com/SA-17/m10
+  DT_LINK: https://github.com/twrpdtgen/android_device_panasonic_P85Nxt/tree/P85Nxt-user-7.1.2-N2G47H-08241812-release-keys
   # (required) who made your phone ? 
-  MANUFACTURER: samsung
+  MANUFACTURER: Panasonic
   # (required) recovery partiton = recovery, else (no recovery partition): boot 
   TARGET: recovery
   # dont change that
   IMAGE: image
   # (required) depend of device tree if you see twrp_"codename".mk use twrp
   # else (omni_"codename".mk): omni
-  OT: twrp
+  OT: omni
   # dont change that
   SYM: _
   # (required) output format for some reason samsung phones need a custom mkbootimg
